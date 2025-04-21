@@ -1,0 +1,49 @@
+@startuml
+start
+
+:Ulazimo u hotel;
+:Upoznajemo prostor, goste i osoblje;
+:Primjećujemo čudne detalje i obrasce;
+
+repeat
+    :Obavljamo dnevne zadatke;
+    :Družimo se s gostima (svi pomalo sumnjivi);
+    :Odlazimo na "spavanje";
+    :Odlučimo pokušati pobjeći;
+    :Obavljamo noćne zadatke;
+repeat while (Igra se ponaša "normalno"?)
+
+:Sanity je počeo opadati;
+:Zadaci postaju sve čudniji;
+:Prostor se lagano mijenja;
+
+if (Pronađena soba 304?) then (Da)
+    :Ulazimo u Sobu 304;
+    :Soba sadrži elemente iz svih drugih soba;
+    :Počinjemo sumnjati u stvarnost;
+endif
+
+:Shvaćamo da su svi gosti Igor;
+:Počinjemo sumnjati da smo i mi možda Igor;
+:Vidimo drugog Igora;
+:Vraćeni smo u svoju sobu;
+
+:Završni zadatak - izlazak;
+
+if (Sanity očuvan?) then (Da)
+    :Napustimo hotel;
+    :Sumnjamo da li je išta bilo stvarno;
+    :Ali... osjećamo mir;
+else (Ne)
+    if (Potpuno izgubili razum?) then (Da)
+        :Postajemo jedan od Igora;
+        :Hotel nas prihvaća;
+        :Zaboravljamo tko smo bili;
+    else (Djelomično izgubljen sanity)
+        :Napustimo hotel;
+        :Ali slike i lica ostaju;
+    endif
+endif
+
+stop
+@enduml
